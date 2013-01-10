@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Today's Deal | Dealstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="custom.css.scss" rel="stylesheet">
+    <link href="assets/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/app/css/style.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="navbar navbar-static-top">
+        <div class="container">
+            <div class="navbar-form well pull-right unit-bg">
+                <div class="login-input pull-left">
+                    <input class="span2" type="text" placeholder="Email">
+                    <input class="span2" type="password" placeholder="Password">
+                </div>
+                <ul class="signup nav pull-right">
+                    <li>
+                        <button type="submit" class="btn btn-primary">
+                            Log in</button></li>
+                    <li class="dropdown btn-group">
+                        <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                            Sign up <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu" role="menu">
+                            <form style="margin-bottom: 0">
+                            <p>
+                                <input type="text" placeholder="Email"></p>
+                            <p>
+                                <input type="password" placeholder="Password"></p>
+                            <p>
+                                <input type="text" placeholder="Username"></p>
+                            <p>
+                                <input class="btn btn-success" type="submit" value="Start"></p>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="span3">
+                <div class="well unit-bg">
+                   <%= link_to image_tag("movemefitpng3rev.png", alt: "logo"), root_path %>
+                    </a>
+                </div>
+                <div class="well unit-bg">
+                    <ul class="nav nav-list">
+                        <li class="active"><a href="list.html"><i class="icon-asterisk"></i>&nbsp;Today's Deal</a></li>
+                        <li><a href="list.html"><i class="icon-headphones"></i>&nbsp;Products</a></li>
+                        <li><a href="list.html"><i class="icon-briefcase"></i>&nbsp;Escapes</a></li>
+                        <li><a href="list.html"><i class="icon-tag"></i>&nbsp;Past Deals</a></li>
+                        <li><a href="#"><i class="icon-comment"></i>&nbsp;Discussion</a></li>
+                        <li class="divider"></li>
+                        <li><a href="contact.html"><i class="icon-question-sign"></i>&nbsp;Help</a></li>
+                    </ul>
+                </div>
+                <div class="well unit-bg">
+                    <p>
+                        <i class="icon-envelope"></i>&nbsp;Get Deal Alerts</p>
+                    <div class="input-append">
+                        <input class="span2" id="inputEmail" type="text" placeholder="Enter your email">
+                        <button class="btn" type="button">
+                            OK</button>
+                    </div>
+                </div>
+                <div class="well unit-bg">
+                    <p>
+                        <i class="icon-heart"></i>&nbsp;Follow Us</p>
+                    <ul class="unstyled social">
+                        <li>
+                            <div class="fb-like-box" data-href="http://www.facebook.com/pages/Twitter/278029242253904"
+                                data-width="292" data-show-faces="false" data-stream="false" data-header="false">
+                            </div>
+                        </li>
+                        <li>
+                            <ul class="unstyled socialicons">
+                                <li class="Facebook"><a href="#" title="Facebook">Facebook</a></li>
+                                <li class="Twitter"><a href="#" title="Twitter">Twitter</a></li>
+                                <li class="Pinterest"><a href="#" title="Pinterest">Pinterest</a></li>
+                                <li class="RSS"><a href="#" title="RSS">RSS</a></li>
+                                <li class="Email"><a href="#" title="Email">Email</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span9">
+                <div class="row unit-block">
+                    <div class="span9 unit-bg">
+                        <div class="unit">
+                            <legend>
+                               <%= link_to image_tag("glyphicons_248_asterisk.png", alt: "deal"), signup_path %>
+                                Today's Deal</legend>
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="list.html">All</a></li>
+                                <li><a href="list.html">Dining</a></li>
+                                <li><a href="list.html">Activities & Events</a></li>
+                                <li><a href="list.html">Health & Beauty</a></li>
+                                <li><a href="list.html">Products</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row unit-block">
+                    <div class="span9 unit-bg">
+                        <div id="myCarousel" class="carousel slide" data-interval="3000">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="active item">
+                                   <%=image_tag("banner1.jpg", alt: "banner1") %>
+                                    <div class="carousel-caption">
+                                        <h4>
+                                            First Thumbnail label</h4>
+                                        <p>
+                                            Description</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <%=image_tag("banner2.jpg", alt: "banner2") %>
+                                    <div class="carousel-caption">
+                                        <h4>
+                                            Second Thumbnail label</h4>
+                                        <p>
+                                            Description</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <%=image_tag("banner3.jpg", alt: "banner3") %>
+                                    <div class="carousel-caption">
+                                        <h4>
+                                            Third Thumbnail label</h4>
+                                        <p>
+                                            Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carousel nav -->
+                            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span9">
+                        <ul class="thumbnails">
+                            <li class="span3">
+                                <div class="thumbnail unit-bg">
+                                    <a href="/signup">
+                                        <%=image_tag("deal1.jpg", alt: "deal1") %>
+                                    <div class="caption">
+                                        <h4>
+                                            Yum Hamburger</h4>
+                                        <p>
+                                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                            porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p>
+                                            <span class="view-deal"><a href="/signup" class="btn btn-large btn-success">View&nbsp;<i
+                                                class="icon-chevron-right icon-white"></i></a></span><span class="help-inline text-highlight-small">
+                                                    $30</span> <span class="help-inline text-strike">$70</span>
+                                        </p>
+                                        <hr>
+                                        <small><i class="icon-tag"></i>&nbsp;2 Purchased&nbsp;&nbsp;<i class="icon-time"></i>&nbsp;2
+                                            Days Remaining</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail unit-bg">
+                                    <a href="/signup">
+                                        <%=image_tag("deal2.jpg", alt: "deal2") %>
+                                    <div class="caption">
+                                        <h4>
+                                            Salisbury Steak</h4>
+                                        <p>
+                                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                            porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p>
+                                            <span class="view-deal"><a href="/signup" class="btn btn-large btn-success">View&nbsp;<i
+                                                class="icon-chevron-right icon-white"></i></a></span><span class="help-inline text-highlight-small">
+                                                    $40</span> <span class="help-inline text-strike">$80</span>
+                                        </p>
+                                        <hr>
+                                        <small><i class="icon-tag"></i>&nbsp;5 Purchased&nbsp;&nbsp;<i class="icon-time"></i>&nbsp;3
+                                            Days Remaining</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail unit-bg">
+                                    <a href="/signup">
+                                        <%=image_tag("deal3.jpg", alt: "deal3") %>
+                                    <div class="caption">
+                                        <h4>
+                                            Skin Aesthetics</h4>
+                                        <p>
+                                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                            porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p>
+                                            <span class="view-deal"><a href="/signup" class="btn btn-large btn-success">View&nbsp;<i
+                                                class="icon-chevron-right icon-white"></i></a></span><span class="help-inline text-highlight-small">
+                                                    $80</span> <span class="help-inline text-strike">$140</span>
+                                        </p>
+                                        <hr>
+                                        <small><i class="icon-tag"></i>&nbsp;2 Purchased&nbsp;&nbsp;<i class="icon-time"></i>&nbsp;5
+                                            Days Remaining</small>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span9">
+                        <ul class="thumbnails">
+                            <li class="span3">
+                                <div class="thumbnail unit-bg">
+                                    <a href="/signup">
+                                        <%=image_tag("deal4.jpg", alt: "deal4") %>
+                                    <div class="caption">
+                                        <h4>
+                                            Tropical Beach</h4>
+                                        <p>
+                                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                            porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p>
+                                            <span class="view-deal"><a href="/signup" class="btn btn-large btn-success">View&nbsp;<i
+                                                class="icon-chevron-right icon-white"></i></a></span><span class="help-inline text-highlight-small">
+                                                    $100</span> <span class="help-inline text-strike">$210</span>
+                                        </p>
+                                        <hr>
+                                        <small><i class="icon-tag"></i>&nbsp;10 Purchased&nbsp;&nbsp;<i class="icon-time"></i>&nbsp;2
+                                            Days Remaining</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail unit-bg">
+                                    <a href="/signup">
+                                        <%=image_tag("deal5.jpg", alt: "deal5") %>
+                                    <div class="caption">
+                                        <h4>
+                                            Trendy Shoes</h4>
+                                        <p>
+                                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                            porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p>
+                                            <span class="view-deal"><a href="/signup" class="btn btn-large btn-success">View&nbsp;<i
+                                                class="icon-chevron-right icon-white"></i></a></span><span class="help-inline text-highlight-small">
+                                                    $40</span> <span class="help-inline text-strike">$80</span>
+                                        </p>
+                                        <hr>
+                                        <small><i class="icon-tag"></i>&nbsp;0 Purchased&nbsp;&nbsp;<i class="icon-time"></i>&nbsp;5
+                                            Days Remaining</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail unit-bg">
+                                    <a href="/signup">
+                                        <%=image_tag("deal6.jpg", alt: "deal6") %>
+                                    <div class="caption">
+                                        <h4>
+                                            Roundtrip Ticket</h4>
+                                        <p>
+                                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                            porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p>
+                                            <span class="view-deal"><a href="/signup" class="btn btn-large btn-success">View&nbsp;<i
+                                                class="icon-chevron-right icon-white"></i></a></span><span class="help-inline text-highlight-small">
+                                                    $200</span> <span class="help-inline text-strike">$300</span>
+                                        </p>
+                                        <hr>
+                                        <small><i class="icon-tag"></i>&nbsp;12 Purchased&nbsp;&nbsp;<i class="icon-time"></i>&nbsp;2
+                                            Days Remaining</small>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row unit-block">
+                    <div class="span9 unit-bg">
+                        <div class="unit footer">
+                            <ul class="pull-right">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="terms.html">Terms &amp; Privacy</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                            <span class="copyright">© 2012 Dealstrap. All rights reserved.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/jquery/js/jquery-1.8.1.min.js"></script>
+    <script src="bootstrap-transition.js"></script>
+    <script src="bootstrap-alert.js"></script>
+    <script src="bootstrap-modal.js"></script>
+    <script src="bootstrap-dropdown.js"></script>
+    <script src="bootstrap-scrollspy.js"></script>
+    <script src="bootstrap-tab.js"></script>
+    <script src="bootstrap-tooltip.js"></script>
+    <script src="bootstrap-popover.js"></script>
+    <script src="bootstrap-button.js"></script>
+    <script src="bootstrap-collapse.js"></script>
+    <script src="bootstrap-carousel.js"></script>
+    <script src="bootstrap-typeahead.js"></script>
+    <script src="assets/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="assets/backstretch/js/jquery.backstretch.min.js"></script>
+    <script src="assets/app/js/script.js"></script>
+    <!-- facebook -->
+    <div id="fb-root">
+    </div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s);
+            js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=279705068712379";
+            fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+</html>
